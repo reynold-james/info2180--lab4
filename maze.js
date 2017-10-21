@@ -7,7 +7,7 @@ window.onload = function () {
 	{
 		var boundary1 = document.getElementById("boundary1");
 		boundary1.onmouseover = function() {
-			this.setAttribute("class", "boundary lose");
+			this.setAttribute("class", "boundary youlose");
 		};
 		
 		var boundary = document.querySelectorAll(".boundary");
@@ -18,7 +18,7 @@ window.onload = function () {
 		{
 			boundary[x].onmouseover = function(){
 				for ( y = 0; y< boundary.length-1;y++){
-					boundary[y].setAttribute("class","boundary lose");
+					boundary[y].setAttribute("class","boundary youlose");
 					
 				}
 				z++;
@@ -55,7 +55,7 @@ window.onload = function () {
 				{
 					for (y = 0; y< boundary.length ; y++)
 					{
-						boundary[y].setAttribute("class","boundary lose");
+						boundary[y].setAttribute("class","boundary youlose");
 					}
 				};
 			};
